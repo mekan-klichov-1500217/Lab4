@@ -1,4 +1,3 @@
-// Define the mixin
 mixin Flyer {
   void fly() {
     print("Taking off!");
