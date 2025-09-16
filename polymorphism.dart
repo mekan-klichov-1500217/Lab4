@@ -89,25 +89,25 @@ class KeyValueFormatter extends DataFormatter {
 }
 
 void main() {
-  //Task2
+  //Task 2
   var weapons = <Weapon>[Sword(), Bow()];
   for (var w in weapons) {
     w.action();
   }
 
-  //Task3
+  //Task 3
   var lion = Lion();
   var goat = Goat();
   feed(lion);
   feed(goat);
 
-  //Task4
+  //Task 4
   var card = CreditCard();
   var paypal = PayPal();
   processPayment(card, 100.0);
   processPayment(paypal, 50.0);
 
-  //Task5
+  //Task 5
   var sampleData = {
     'name': 'Mekan',
     'age': 21,
