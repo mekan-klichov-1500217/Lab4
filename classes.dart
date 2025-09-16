@@ -36,7 +36,7 @@ class BankAccount {
   void deposit(double amount) {
     if (amount > 0) {
       balance += amount;
-      print("Deposited \$${amount.toStringAsFixed(2)}. New balance: \$${balance.toStringAsFixed(2)}");
+      print("Deposited ${amount.toStringAsFixed(2)}. New balance: ${balance.toStringAsFixed(2)}");
     } else {
       print("Deposit amount must be positive.");
     }
@@ -46,10 +46,10 @@ class BankAccount {
     if (amount <= 0) {
       print("Withdrawal amount must be positive.");
     } else if (amount > balance) {
-      print("Error! Not enough balance to withdraw \$${amount.toStringAsFixed(2)}");
+      print("Error! Not enough balance to withdraw ${amount.toStringAsFixed(2)}");
     } else {
       balance -= amount;
-      print("Withdrew \$${amount.toStringAsFixed(2)}. New balance: \$${balance.toStringAsFixed(2)}");
+      print("Withdrew ${amount.toStringAsFixed(2)}. New balance: ${balance.toStringAsFixed(2)}");
     }
   }
 }
@@ -75,7 +75,7 @@ void main() {
 
   //Task 4
   BankAccount acc = BankAccount("123456", "Mekan Klichov", 100.0);
-  print("Initial balance: \$${acc.balance.toStringAsFixed(2)}");
+  print("Initial balance: ${acc.balance.toStringAsFixed(2)}");
 
   acc.deposit(50);      //normal deposit
   acc.withdraw(30);     //normal withdrawal
